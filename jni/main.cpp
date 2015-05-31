@@ -101,6 +101,8 @@ float RedstoneShovelItem::getDestroySpeed(ItemInstance* inst, Tile* tile) {
 		return 3.0f;
 	} if (tile==Tile::tiles[110]) { // Mycelium
 		return 3.0f;
+	} if (tile==Tile::tiles[198]) { // Grass Path
+		return 3.0f;
 	} else {
 		return 5.0f;
 		}
@@ -124,6 +126,8 @@ bool RedstoneShovelItem::canDestroySpecial(const Tile* tile) {
 	} if (tile==Tile::tiles[82]) { // Clay Block
 		return true;
 	} if (tile==Tile::tiles[110]) { // Mycelium
+		return true;
+	} if (tile==Tile::tiles[198]) { // Grass Path
 		return true;
 	} else {
 		return false;
@@ -453,6 +457,8 @@ bool EmeraldShovelItem::canDestroySpecial(const Tile* tileConst) {
 	} if (tileConst==Tile::tiles[82]) { // Clay Block
 		return true;
 	} if (tileConst==Tile::tiles[110]) { // Mycelium
+		return true;
+	} if (tileConst==Tile::tiles[198]) { // Grass Path
 		return true;
 	} else {
 		return false;
